@@ -8,6 +8,109 @@
     src: url(../font/Roboto-Regular.ttf);
 }
 
+@keyframes like {
+    0% {
+        transform: scale(0);
+    }
+
+    20% {
+        transform: scale(0.2);
+    }
+
+    40% {
+        transform: scale(0.4);
+    }
+
+    60% {
+        transform: scale(0.6);
+    }
+
+    70% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.5);
+    }
+
+    85% {
+        transform: scale(0.5);
+        animation-duration: 500ms;
+        transform-origin: center;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        transform: scale(1);
+        animation-duration: 500ms;
+        transform-origin: center;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        animation-timing-function: ease-out;
+        animation-duration: 500ms;
+        transform-origin: center;
+        transform: scale(0.5);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform-origin: center;
+        transform: scale(1);
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes plates {
+    0% {
+        opacity: 0;
+        transform: translateY(9999px);
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes check {
+    from {
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes checked {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 body {
     width: 100%;
     margin: auto;
@@ -41,7 +144,7 @@ header {
     background-color: #EDEDED;
 }
 
-.location-form-searchBar{
+.location-form-searchBar {
     padding: 1rem;
     font-family: "Roboto";
     font-size: .8rem;
@@ -49,13 +152,13 @@ header {
     border: none;
 }
 
-.location-icon{
+.location-icon {
     padding-left: 1.8rem;
 }
 
 /* Explorer nos restaurants */
 
-.explore{
+.explore {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -68,22 +171,22 @@ header {
     text-align: center;
 }
 
-.explore-title{
+.explore-title {
     font-weight: bold;
     font-size: 1.7rem;
 }
 
-.explore-text{
+.explore-text {
     font-size: 1rem;
     color: #7a7a7a;
     padding-bottom: 1rem;
 }
 
-.explore-btn{
+.explore-btn {
     text-decoration: none;
     font-size: .8rem;
     color: white;
-    background: linear-gradient(349deg, rgba(147,86,220,1) 24%, rgba(255,121,218,1) 89%);
+    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
     border-radius: 40px;
     box-shadow: 0rem 0.1rem 1rem #b3b3b3;
     padding: .8rem;
@@ -95,7 +198,7 @@ header {
 }
 
 /* Fonctionnement */
-.functioning{
+.functioning {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -103,14 +206,14 @@ header {
     font-family: "Roboto";
 }
 
-.functioning-title{
+.functioning-title {
     width: 85%;
     font-size: 1.8rem;
     font-weight: bold;
     padding-bottom: 0.8rem;
 }
 
-.functioning-bloc{
+.functioning-bloc {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -118,7 +221,7 @@ header {
     padding-bottom: 70px;
 }
 
-.functioning-card{
+.functioning-card {
     width: 19rem;
     display: flex;
     align-items: center;
@@ -132,15 +235,15 @@ header {
     box-shadow: #b3b3b3 0px 3px 8px;
 }
 
-.functioning-card:hover{
+.functioning-card:hover {
     background-color: #f2eafb;
 }
 
-.functioning-card:hover .functioning-icon{
+.functioning-card:hover .functioning-icon {
     color: #9356DC;
 }
 
-.card-number{
+.card-number {
     position: relative;
     background-color: #9356DC;
     color: white;
@@ -150,19 +253,19 @@ header {
     left: -22px;
 }
 
-.functioning-icon{
+.functioning-icon {
     position: relative;
     left: -12px;
     color: gray;
 }
 
-.functioning-card-title{
+.functioning-card-title {
     font-size: 1rem;
 }
 
 
 /* Restaurants */
-.restaurants{
+.restaurants {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -170,20 +273,21 @@ header {
     font-family: "Roboto";
 }
 
-.restaurants-title{
+.restaurants-title {
     width: 85%;
     font-size: 1.8rem;
     font-weight: bold;
     margin-left: 20px;
 }
 
-.bloc-restaurants{
+.bloc-restaurants {
     display: flex;
     width: 100%;
     flex-direction: column;
+    padding-bottom: 2.8rem;
 }
 
-.bloc-cards{
+.bloc-cards {
     width: 90%;
     height: 260px;
     background-color: white;
@@ -193,19 +297,19 @@ header {
     margin: 20px;
 }
 
-.card-restaurants{
+.card-restaurants {
     text-decoration: none;
     color: black;
 }
 
-.restaurants-img{
+.restaurants-img {
     width: 100%;
     height: 11rem;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.new{
+.new {
     background-color: aquamarine;
     color: #007f54;
     padding: 0.3rem 0.6rem;
@@ -215,31 +319,32 @@ header {
     right: 12px;
 }
 
-.name-restaurants{
+.name-restaurants {
     margin-left: 0.6rem;
 }
 
-.city-restaurants{
+.city-restaurants {
     margin-top: -0.9rem;
     font-size: 1.1rem;
+    color: rgb(95, 95, 95);
     padding: 0 0 0.5rem 0.6rem;
 }
 
-.restaurants-icon{
+.restaurants-icon {
     font-size: 2rem;
     position: absolute;
     right: 30px;
     top: 200px;
 }
 
-.like-empty{
+.like-empty {
     position: relative;
     color: black;
     cursor: pointer;
     z-index: 0;
 }
 
-.like-full{
+.like-full {
     position: absolute;
     right: 0;
     background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
@@ -250,6 +355,290 @@ header {
     transform-origin: bottom;
 }
 
-.like-full:active{
-    animation: heart 0ms cubic-bezier(0.53, 0.21, 0.99, 0.64) forwards;
+.like-full:active {
+    animation: like 1500ms cubic-bezier(0.53, 0.21, 0.99, 0.64) forwards;
+}
+
+/* footer */
+.footer-infos {
+    background: #3b3b3b;
+    /* padding-left: 1.8rem; */
+}
+
+.logo-footer {
+    width: 7rem;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    color: white;
+}
+
+.list-footer {
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: "Roboto";
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+.select-footer {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.select-footer>a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icon1 {
+    padding-right: .9rem;
+}
+
+.footer-icon2 {
+    padding-right: .8rem;
+    font-size: 0.8rem;
+}
+
+.footer-text {
+    margin: 0.3rem 0;
+    font-size: small;
+}
+
+/* Menu La palette du gout ----------------------------------------------------*/
+
+/* header */
+.header-arrow {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.menu {
+    width: 100%;
+}
+
+.img-menu {
+    width: 100%;
+    height: 21rem;
+    object-fit: cover;
+}
+
+.menu-card {
+    position: relative;
+    top: -100px;
+    background-color: #f2f2f2;
+    padding: 0 1rem 2rem 1rem;
+    border-radius: 30px 30px 0 0;
+}
+
+.menu-title {
+    padding: 2rem 0 0 0;
+    font-family: "shrikhand";
+    font-size: 1.7rem;
+}
+
+.menu-icon {
+    font-size: 1.7rem;
+    position: absolute;
+    right: 25px;
+    top: 40px;
+}
+
+.menu-like-empty {
+    position: relative;
+    color: black;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.menu-like-full {
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transform-origin: bottom;
+}
+
+.menu-like-full:active {
+    animation: like 1500ms cubic-bezier(0.53, 0.21, 0.99, 0.64) forwards;
+}
+
+/* menu list */
+.menu-list {
+    font-family: "Roboto";
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.menu-list-bloc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-opening {
+    font-size: 1.3rem;
+    margin: 0;
+    position: relative;
+}
+
+
+.menu-opening::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #99E2D0;
+    bottom: -3px;
+    left: 0;
+}
+
+/* .plats{
+    padding-left: 40px;
+}
+
+.plats::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #99E2D0;
+    bottom: -3px;
+    left: 40px;
+} */
+
+.menu-plates {
+    background-color: white;
+    border-radius: 20px;
+    font-family: "Roboto";
+    box-shadow: 0 0 10px #d4d4d4;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    animation: apparition 2s ease-in-out forwards;
+}
+
+.menu-plates-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 4.6rem;
+}
+
+.menu-plates-content {
+    width: 70%;
+    padding: 0 1rem;
+}
+
+.menu-plates-title {
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: 900;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu-plates-description {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(95, 95, 95);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu-plates-price {
+    width: 20%;
+    padding-top: 1.4rem;
+    font-weight: 900;
+    position: relative;
+}
+
+.price-text {
+    top: 40%;
+    right: 7%;
+    display: inline-block;
+}
+
+.menu-select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    opacity: 0;
+    width: 0%;
+    background-color: #99E2D0;
+    border-radius: 0 20px 20px 0;
+}
+
+.plates-icon {
+    opacity: 0;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 12px 12px;
+    padding: 3px;
+    color: #99E2D0;
+}
+
+.menu-plates:active .menu-plates-content {
+    width: 55%;
+    transition: all 1s;
+}
+
+.menu-plates:active .menu-select {
+    width: 20%;
+    animation: checked 2s ease-in-out forwards;
+}
+
+.menu-plates:active .plates-icon {
+    animation: check 1s ease-in 100ms forwards;
+}
+
+.menu__plats.delay1 {
+    animation-delay: 300ms;
+}
+
+.menu__plats.delay2 {
+    animation-delay: 700ms;
+}
+
+.menu__plats.delay3 {
+    animation-delay: 1000ms;
+}
+
+.menu-card-btn {
+    width: 40%;
+    text-align: center;
+    margin: 15px auto;
+    text-decoration: none;
+    font-size: .8rem;
+    color: white;
+    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
+    border-radius: 40px;
+    box-shadow: 0rem 0.1rem 1rem #b3b3b3;
+    padding: .8rem;
+}
+
+.menu-card-btn:hover{
+    transition: all 300ms ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.footer-menus{
+    margin-top: -100px;
 }
