@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Shrikhand";
-    src: url(../font/Shrikhand-Regular.ttf);
+    src: url(../fonts/Shrikhand-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(../font/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @keyframes like {
@@ -619,6 +619,10 @@ header {
 
 .menu__plats.delay3 {
     animation-delay: 1000ms;
+}
+
+.menu__plats.delay4 {
+    animation-delay: 1300ms;
 }
 
 .menu-card-btn {
