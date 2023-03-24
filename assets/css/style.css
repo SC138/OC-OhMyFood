@@ -269,7 +269,7 @@ header {
     text-decoration: none;
     font-size: .8rem;
     color: white;
-    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
+    background: #9356DC;
     border-radius: 40px;
     box-shadow: 0rem 0.1rem 1rem #b3b3b3;
     padding: .8rem;
@@ -277,6 +277,7 @@ header {
 
 .explore-btn:hover {
     transition: all 300ms ease-in-out;
+    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -585,19 +586,6 @@ header {
     left: 0;
 }
 
-/* .plats{
-    padding-left: 40px;
-}
-
-.plats::after{
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: #99E2D0;
-    bottom: -3px;
-    left: 40px;
-} */
 
 .menu-plates {
     background-color: white;
@@ -713,7 +701,7 @@ header {
     text-decoration: none;
     font-size: .8rem;
     color: white;
-    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
+    background: #9356DC;
     border-radius: 40px;
     box-shadow: 0rem 0.1rem 1rem #b3b3b3;
     padding: .8rem;
@@ -721,9 +709,93 @@ header {
 
 .menu-card-btn:hover {
     transition: all 300ms ease-in-out;
+    background: linear-gradient(349deg, rgba(147, 86, 220, 1) 24%, rgba(255, 121, 218, 1) 89%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .footer-menus {
     margin-top: -100px;
+}
+
+/* Responsive */
+/* Tablette */
+
+@media screen and (min-width:693px) and (max-width:991px){
+    .functioning-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .functioning-card{
+        width: 13rem;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .restaurants-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bloc-restaurants{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .bloc-cards{
+        width: 45%;
+        margin: 20px auto;
+    }
+
+/* Menus */
+    .menu-list-bloc{
+        width: 65%;
+        margin: auto;
+    }
+}
+
+/* ---------------------------------------------- */
+/* Desktop */
+@media screen and (min-width:992px) {
+    .functioning-title{
+        width: 100%;
+        text-align: center;
+    }
+    .functioning-card{
+        width: 13rem;
+        height: 50px;
+        margin: 10px;
+        padding: 0;
+    }
+
+    .restaurants-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bloc-restaurants{
+        width: 100%;
+        flex-flow: row wrap;
+    }
+
+    .bloc-cards{
+        width: 45%;
+        height: 320px;
+        margin: 20px auto;
+    }
+
+    .restaurants-img{
+        height: 15rem;
+    }
+
+    .restaurants-icon {
+        font-size: 2rem;
+        position: absolute;
+        right: 30px;
+        top: 250px;
+    }
+
+
+
 }
