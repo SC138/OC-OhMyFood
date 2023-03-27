@@ -141,9 +141,10 @@
 }
 
 body {
-    width: 100%;
+    max-width: 1440px;
     margin: auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* spinner */
@@ -307,6 +308,7 @@ header {
 
 .functioning-card {
     width: 19rem;
+    position: relative;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -328,23 +330,25 @@ header {
 }
 
 .card-number {
-    position: relative;
+    position: absolute;
     background-color: #9356DC;
     color: white;
     padding: 5px 10px;
     border-radius: 50%;
     font-size: 1rem;
-    left: -22px;
+    transform: translate(-70%, -10%);
 }
 
 .functioning-icon {
     position: relative;
-    left: -12px;
+    left: 20px;
     color: gray;
 }
 
 .functioning-card-title {
+    position: relative;
     font-size: 1rem;
+    left: 15px;
 }
 
 
@@ -446,7 +450,6 @@ header {
 /* footer */
 .footer-infos {
     background: #3b3b3b;
-    /* padding-left: 1.8rem; */
 }
 
 .logo-footer {
@@ -490,7 +493,7 @@ header {
     font-size: small;
 }
 
-/* Menu La palette du gout ----------------------------------------------------*/
+/* Menus ----------------------------------------------------*/
 
 /* header */
 .header-arrow {
@@ -522,11 +525,11 @@ header {
 .menu-title {
     padding: 2rem 0 0 0;
     font-family: "shrikhand";
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .menu-icon {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     position: absolute;
     right: 25px;
     top: 40px;
@@ -726,16 +729,19 @@ header {
         text-align: center;
     }
 
+    .functioning-bloc{
+        gap: 25px;
+    }
+
     .functioning-card{
-        width: 13rem;
-        height: 50px;
-        margin: 0;
-        padding: 0;
+        width: 13.5rem;
+        margin: 5px;
     }
 
     .restaurants-title{
         width: 100%;
         text-align: center;
+        margin-left: 0;
     }
 
     .bloc-restaurants{
@@ -748,6 +754,26 @@ header {
         margin: 20px auto;
     }
 
+    /* footer */
+    .footer-infos{
+        overflow: hidden;
+    }
+
+    .logo-footer{
+        display: block;
+        margin: auto;
+    }
+
+    .list-footer{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .select-footer{
+        width: 20%;
+    }
+
+
 /* Menus */
     .menu-list-bloc{
         width: 65%;
@@ -758,15 +784,16 @@ header {
 /* ---------------------------------------------- */
 /* Desktop */
 @media screen and (min-width:992px) {
+
     .functioning-title{
         width: 100%;
         text-align: center;
     }
+
+
     .functioning-card{
-        width: 13rem;
-        height: 50px;
+        width: 15rem;
         margin: 10px;
-        padding: 0;
     }
 
     .restaurants-title{
@@ -796,6 +823,74 @@ header {
         top: 250px;
     }
 
+     /* footer */
+
+    .footer-infos{
+        overflow: hidden;
+    }
+
+    .logo-footer{
+        display: block;
+        margin: auto;
+    }
+
+    .list-footer{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .select-footer{
+        width: 15%;
+    }
 
 
+
+    .like-full:hover {
+        animation: like 1500ms cubic-bezier(0.53, 0.21, 0.99, 0.64) forwards;
+    }
+
+    .menu-plates:hover .menu-plates-content {
+        width: 55%;
+        transition: all 1s;
+    }
+    
+    .menu-plates:hover .menu-select {
+        width: 20%;
+        animation: checked 1s forwards;
+    }
+    
+    .menu-plates:hover .plates-icon {
+        animation: check 1s 100ms forwards;
+    }
+
+    .menu-like-full:hover {
+        animation: like 1500ms cubic-bezier(0.53, 0.21, 0.99, 0.64) forwards;
+    }
+
+    .menu-plates{
+        width: 100%;
+    }
+
+    .menu-card{
+        height: 62.2vh;
+    }
+
+    .menu-list{
+        width: 100%;
+        justify-content: space-around;
+        margin-top:4rem ;
+    }
+
+    .menu-list-bloc{
+        width: 30%;
+        gap: 35px;
+        margin-top: 0;
+    }
+
+    .menu-card-btn{
+        position: absolute;
+        bottom: 5rem;
+        width: 20%;
+    }
 }
+
