@@ -317,7 +317,7 @@ header {
     background: whitesmoke;
     border-radius: 25px;
     margin-left: 1.2rem;
-    padding: 1rem 0 0.5rem 0.5rem;
+    padding: 0.5rem;
     gap: 10px;
     box-shadow: #b3b3b3 0px 3px 8px;
 }
