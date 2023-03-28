@@ -825,6 +825,7 @@ header {
 
      /* footer */
 
+
     .footer-infos{
         overflow: hidden;
     }
@@ -872,7 +873,7 @@ header {
     }
 
     .menu-card{
-        height: 62.2vh;
+        height: 800px;
     }
 
     .menu-list{
@@ -888,9 +889,11 @@ header {
     }
 
     .menu-card-btn{
-        position: relative;
-        bottom: -3rem;
         width: 20%;
+        margin-top: 10%;
+        /* position: relative;
+        bottom: -3rem; */
+        
     }
 }
 
