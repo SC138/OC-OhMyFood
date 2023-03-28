@@ -888,8 +888,8 @@ header {
     }
 
     .menu-card-btn{
-        position: absolute;
-        bottom: 5rem;
+        position: relative;
+        bottom: -3rem;
         width: 20%;
     }
 }
