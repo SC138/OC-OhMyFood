@@ -133,6 +133,7 @@
 @keyframes checked {
     from {
         opacity: 0;
+        transform: translateX(5px);
     }
 
     to {
