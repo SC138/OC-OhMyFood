@@ -337,19 +337,19 @@ header {
     padding: 5px 10px;
     border-radius: 50%;
     font-size: 1rem;
-    transform: translate(-70%, -10%);
+    transform: translate(-70%, 0);
 }
 
 .functioning-icon {
     position: relative;
-    left: 20px;
+    left: 25px;
     color: gray;
 }
 
 .functioning-card-title {
     position: relative;
     font-size: 1rem;
-    left: 15px;
+    left: 40px;
 }
 
 
@@ -786,11 +786,33 @@ header {
 /* Desktop */
 @media screen and (min-width:992px) {
 
+    .logo{
+        width: 15rem;
+    }
+
+
+    .explore-title {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .explore-text{
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+
+    .explore-btn {
+        font-size: 1rem;
+        padding: 1.5rem;
+    }
+
     .functioning-title{
         width: 100%;
         text-align: center;
     }
-
+    .functioning-card-title{
+        left:25px
+    }
 
     .functioning-card{
         width: 15rem;
@@ -874,7 +896,7 @@ header {
     }
 
     .menu-card{
-        height: 800px;
+        height: 786px;
     }
 
     .menu-list{
@@ -891,10 +913,9 @@ header {
 
     .menu-card-btn{
         width: 20%;
-        margin-top: 10%;
-        /* position: relative;
-        bottom: -3rem; */
-        
+        font-size: 1rem;
+        margin-top: 5%;
+        padding: 1.5rem;
     }
 }
 
