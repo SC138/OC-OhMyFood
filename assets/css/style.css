@@ -735,8 +735,16 @@ header {
     }
 
     .functioning-card{
-        width: 13.5rem;
+        width: 12.5rem;
         margin: 5px;
+    }
+
+    .functioning-icon {
+        left: 15px;
+    }
+
+    .functioning-card-title{
+        left: 7px;
     }
 
     .restaurants-title{
