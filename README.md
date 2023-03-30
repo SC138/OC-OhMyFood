@@ -11,7 +11,7 @@ Compatibilités Chrome, Firefox :
 Mobile first, tablette, desktop
 Chrome, Firefox
 
-Lien vers le site Git Pages & Netlify:    
+Lien vers le site via Git Pages & Netlify:    
 https://sc138.github.io/OC-OhMyFood/index.html    
 https://ohmyfood-tc89.netlify.app/
 
