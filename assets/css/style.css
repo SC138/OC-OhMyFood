@@ -619,9 +619,9 @@ header {
     margin: 10px 0;
     font-size: 1rem;
     font-weight: 900;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    white-space: nowrap; /* Permet de pas retourner à la ligne quand la taille de la box est réduite */
+    text-overflow: ellipsis;  /* Ajoute les ... quand texte masqué */
+    overflow: hidden;  /* Masque le contenu qui dépasse du conteneur */
 }
 
 .menu-plates-description {
