@@ -1,0 +1,20 @@
+{
+  "name": "code_omf",
+  "version": "1.0.0",
+  "description": "Voici les livrables pour le Projet 3 OpenClass Rooms: OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SC138/OC-OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/SC138/OC-OhMyFood/issues"
+  },
+  "homepage": "https://github.com/SC138/OC-OhMyFood#readme"
+}
